@@ -40,16 +40,6 @@
             font-display: swap;
         }
 
-        @media screen and (min-width: 420px) {
-            body {
-                align-items: center;
-                font-family: 'Cafe24ProSlim';
-                text-wrap: wrap;
-                margin: 20px 16px 40px 16px;
-                width: calc(100%-32px);
-            }
-        }
-        
         body {
             align-items: center;
             font-family: 'Cafe24ProSlim';
@@ -57,6 +47,14 @@
             margin: auto;
             margin-bottom: 40px;
             max-width: 403px;
+        }
+
+        @media screen and (max-width: 420px) {
+            body {
+                margin: 20px 16px 40px 16px;
+                width: (calc(100%-32px));
+                max-width: auto;
+            }
         }
 
         h1 {
